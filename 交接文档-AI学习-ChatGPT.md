@@ -31,24 +31,25 @@
 
 **阶段 B(考后,研一前):**深度学习深化 → 大模型 / Transformer → 论文复现(ResNet → Transformer → BERT → GPT),对接研究生课题。
 
-## 四、已完成进度(Day 1~3)
+## 四、已完成进度(Day 1~4)
 
 | 天 | 日期 | 内容 | 状态 |
 |---|---|---|---|
 | Day 1 | 2026-08-19 | 环境搭建(Miniconda+JupyterLab+numpy/pandas/matplotlib)、首个 notebook、git 首次提交、项目迁入 D:\01_Study | ✅ |
 | Day 2 | 2026-09-01 | NumPy 基础:创建/属性/形状/广播复习 + 小挑战;第一次独立走通命令行 git 收盘 | ✅ |
 | Day 3 | 2026-09-05 | NumPy 进阶:索引切片/布尔掩码/聚合 axis/矩阵乘法;**发现并修正了 argmax 0 起始索引 bug** | ✅ |
+| Day 4 | 2026-09-08 | NumPy 实战:模拟数据 + 统计(seed/统计量/相关性/可视化/标准化) | ✅ |
 
-练习文件:`练习/day01-start.ipynb`、`练习/day02-numpy-basics.ipynb`、`练习/day03-numpy-advanced.ipynb`
-学习日志:`学习日志/2026-08-19.md`、`学习日志/2026-09-01.md`、`学习日志/2026-09-05.md`
+练习文件:`练习/day01-start.ipynb`、`练习/day02-numpy-basics.ipynb`、`练习/day03-numpy-advanced.ipynb`、`练习/day04-numpy-stats.ipynb`
+学习日志:`学习日志/2026-08-19.md`、`学习日志/2026-09-01.md`、`学习日志/2026-09-05.md`、`学习日志/2026-09-08.md`
 
 **W1 路线图**(已存入 `练习/README.md`):Day 4 = NumPy 实战(模拟数据+统计)→ Day 5 = Pandas 基础 → Day 6 = Pandas 进阶 → Day 7 = Titanic EDA 收官。
 
 ## 五、我的机器环境(重要,别乱动!)
 
-- **Python**:Miniconda 3(`C:\Users\Enhance\miniconda3`,conda 26.5.3,自带 Python 3.14.6);短命令 `python` 已指到它。
+- **Python**:Miniconda 3(`C:\Users\Enhance\miniconda3`,conda 26.5.3,自带 Python 3.14.6);短命令 `python` 在普通终端已指到它(用户 PATH 里 Miniconda 在 WindowsApps 之前),但 Codex 执行环境的 PATH 前缀不同,可能解析到 WindowsApps 占位符——脚本里建议用完整路径 `C:\Users\Enhance\miniconda3\python.exe`。
 - **库**:numpy 2.5.2 / pandas 3.0.5 / matplotlib 3.11.1 / JupyterLab 4.6.3(清华源安装)。
-- **JupyterLab**:根目录 `D:\01_Study`,地址 `http://127.0.0.1:8888/lab`(无 token)。启动命令:`python -m jupyter lab --no-browser --notebook-dir="D:\01_Study"`。
+- **JupyterLab**:根目录 `D:\01_Study`,地址 `http://127.0.0.1:8888/lab`。默认启动会带 token(用 `--ServerApp.token=""` 可关闭);启动命令:`python -m jupyter lab --no-browser --notebook-dir="D:\01_Study"`。
 - **git**:仓库 `D:\01_Study\ai-learning` → GitHub `https://github.com/KhalilHNAG/ai-learning`(用户名 KhalilHNAG,提交身份用隐私邮箱 `KhalilHNAG@users.noreply.github.com`)。
 - **这台机器的已知坑(重要!)**:
   1. Windows **schannel TLS 凭据层损坏**:所有 HTTPS 工具(curl/git 默认后端)报 `SEC_E_NO_CREDENTIALS`。解法:git 已全局切 `sslBackend=openssl`;下载/装包走清华镜像(HTTP 或 Python OpenSSL 均可)。
@@ -68,7 +69,7 @@
 
 请先回复:
 1. 确认你已读完背景,并用一两句话告诉我你理解的我的当前状态;
-2. 如果今天是 **Day 4**,生成 `练习/day04-numpy-stats.ipynb`(NumPy 实战:模拟数据 + 统计,含 np.random、统计量、简单可视化),并先自测跑通;
+2. 如果今天是 **Day 5**,生成 `练习/day05-pandas-basics.ipynb`(Pandas 基础:Series/DataFrame、读写 CSV、缺失值),并先自测跑通;
 3. 告诉我今天 1 小时的具体安排。
 
-> 若需要练习本模板,参考现有 day01~day03 的格式(markdown 引导 + code + 自检清单 + 收盘动作)。
+> 若需要练习本模板,参考现有 day01~day04 的格式(markdown 引导 + code + 自检清单 + 收盘动作)。
