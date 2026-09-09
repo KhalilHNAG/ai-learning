@@ -43,7 +43,7 @@
 练习文件:`练习/day01-start.ipynb`、`练习/day02-numpy-basics.ipynb`、`练习/day03-numpy-advanced.ipynb`、`练习/day04-numpy-stats.ipynb`
 学习日志:`学习日志/2026-08-19.md`、`学习日志/2026-09-01.md`、`学习日志/2026-09-05.md`、`学习日志/2026-09-08.md`
 
-**W1 路线图**(已存入 `练习/README.md`):Day 4 = NumPy 实战(模拟数据+统计)→ Day 5 = Pandas 基础 → Day 6 = Pandas 进阶 → Day 7 = Titanic EDA 收官。
+**W1-2 路线图**(已存入 `练习/README.md`,Day 5~14 练习本已全部生成并自测通过):W1 Day 5~7 = Pandas 基础/进阶 + Titanic 第一轮 EDA;W2 Day 8~14 = Matplotlib/可视化/清洗/重塑/时间序列/零售 EDA/完整 EDA 工作流。
 
 ## 五、我的机器环境(重要,别乱动!)
 
